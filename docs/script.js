@@ -3,9 +3,11 @@ function carregou() {
 };
 
 function clicou() {
-    document.getElementById("Rocky").src="../images/rock_happy.png";
     let userName = prompt("Qual o seu nome, mestre ?");
     if (userName) {
         alert("Prazer em te conhecer mestre " + userName + " !");
+        document.getElementById("Rocky").src="../images/rock_happy.png";
+        document.getElementById("saudacao").innerText="Obrigado, mestre " + userName + " !";
     }
 };
+
